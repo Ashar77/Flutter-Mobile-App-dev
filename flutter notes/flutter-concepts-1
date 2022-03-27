@@ -1,0 +1,32 @@
+
+
+there is a strong relation between 2 classes because of inheritence (extends keyword)
+
+the relation b/w  a mixin and a class (with keyword) is not that much strong.
+
+e.g
+
+class Person extends Mammals with Agility. (non-mammals can also have agility)
+					     (but every person is a mammal)
+					     
+dart can have only 1 parent class , but we can have multiple mixins.					   
+------------------------------------------------------
+
+
+ChangeNotifierProvider.value   -->  when using list or grid
+				---> make sure provider works even if the data 				     for the widget change
+but the create method will create bugs if used with list,grids				
+			But
+			
+whenever you create a new object you should use the create method approach ChangeNotifierProvider(), and whenever you use an existing object, it is recommended to use ChangeNotifierProvider.value() 				 
+
+
+---------------------------------------------------------
+
+when to use setState and when to use provider/statemanagement
+
+when the change of data only has impact on a single widget and other widgets are not having the impact of that change use setState
+when the change of data is imapacting many widgets then we can use state management/provider.
+	because our getter will show the filtered data on other screens as well. (which is wrong)
+	
+
